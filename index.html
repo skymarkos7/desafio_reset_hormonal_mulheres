@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Reset Hormonal da Mulher - Elimine até 5kg em 7 dias</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #f8f4f0 0%, #f0e6f7 100%);
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #2d3748;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: #4a5568;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+        
+        .benefits-list {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+            color: #2d3748;
+            font-weight: 600;
+        }
+        
+        .benefit-item::before {
+            content: "✔️";
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .ebook-note {
+            background: #e2f8ff;
+            color: #2b6cb0;
+            padding: 15px 25px;
+            border-radius: 25px;
+            display: inline-block;
+            margin: 20px 0;
+            font-weight: 600;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+            color: white;
+            padding: 20px 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 0;
+            box-shadow: 0 4px 20px rgba(229, 62, 62, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(229, 62, 62, 0.4);
+        }
+        
+        .pain-section {
+            background: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .pain-title {
+            font-size: 2.5rem;
+            color: #2d3748;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        
+        .pain-subtitle {
+            font-size: 1.3rem;
+            color: #4a5568;
+            margin-bottom: 40px;
+        }
+        
+        .pain-list {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+        
+        .pain-item {
+            font-size: 1.1rem;
+            margin: 15px 0;
+            color: #4a5568;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .pain-item::before {
+            content: "- ";
+            color: #e53e3e;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .highlight-text {
+            background: #fff5f5;
+            color: #c53030;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 30px 0;
+            border-left: 4px solid #e53e3e;
+        }
+        
+        .solution-section {
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            color: #2d3748;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        
+        .section-description {
+            font-size: 1.2rem;
+            color: #4a5568;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+        
+        .feature-card::before {
+            content: "✅";
+            font-size: 1.5rem;
+            display: block;
+            margin-bottom: 15px;
+        }
+        
+        .science-section {
+            background: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hormones-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin: 50px 0;
+        }
+        
+        .hormone-card {
+            background: #f7fafc;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .hormone-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .hormone-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        
+        .hormone-description {
+            color: #4a5568;
+            font-size: 1rem;
+        }
+        
+        .how-it-works-section {
+            background: linear-gradient(135deg, #f0fff4 0%, #e6fffa 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .days-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .day-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .day-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        .day-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        
+        .menu-section {
+            background: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .meal-item {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+        
+        .meal-icon {
+            font-size: 1.8rem;
+            margin-right: 15px;
+        }
+        
+        .meal-text {
+            font-size: 1rem;
+            color: #4a5568;
+        }
+        
+        .benefits-section {
+            background: linear-gradient(135deg, #fffaf0 0%, #fef5e7 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 50px 0;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+        
+        .benefit-card::before {
+            content: "✅";
+            font-size: 1.3rem;
+            margin-right: 15px;
+        }
+        
+        .testimonials-section {
+            background: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .testimonial-card {
+            background: #f7fafc;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: left;
+            position: relative;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: #4a5568;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: #2d3748;
+        }
+        
+        .what-you-get-section {
+            background: linear-gradient(135deg, #e6fffa 0%, #f0fff4 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .ebook-mockup {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            display: inline-block;
+            margin: 30px 0;
+        }
+        
+        .guarantee-section {
+            background: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .guarantee-badge {
+            background: linear-gradient(135deg, #38a169 0%, #2f855a 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 30px 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        .final-cta-section {
+            background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .final-cta-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        
+        .final-cta-text {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .final-cta-button {
+            background: white;
+            color: #e53e3e;
+            padding: 20px 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 0;
+            box-shadow: 0 4px 20px rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .final-cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(255,255,255,0.4);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .benefits-list {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            .section-title, .pain-title, .final-cta-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Desafio Reset Hormonal da Mulher</h1>
+            <h2 class="hero-subtitle">Você Está a 7 Dias de Eliminar Até 5kg de Inchaço e Ativar os Hormônios Que Fazem o Seu Corpo Voltar a Responder</h2>
+            
+            <div class="benefits-list">
+                <div class="benefit-item">Método 100% Natural</div>
+                <div class="benefit-item">Criado para Mulheres 39+</div>
+                <div class="benefit-item">Sem Dietas Loucas ou Academia</div>
+            </div>
+            
+            <div class="ebook-note">
+                📩 Ebook Digital. Acesso imediato.
+            </div>
+            
+            <a href="https://pay.kiwify.com.br/DJFBfkk" class="cta-button">QUERO COMEÇAR MEU RESET</a>
+        </div>
+    </section>
+
+    <!-- PAIN SECTION -->
+    <section class="pain-section">
+        <div class="container">
+            <h2 class="pain-title">Você sente que seu corpo está travado?</h2>
+            <p class="pain-subtitle">Como se nada funcionasse mais como antes?</p>
+            
+            <div class="pain-list">
+                <div class="pain-item">Dietas que antes davam certo agora não fazem efeito</div>
+                <div class="pain-item">Você se sente cansada, inchada e emocionalmente esgotada</div>
+                <div class="pain-item">O sono não vem, a ansiedade domina — e a barriga… cresce</div>
+            </div>
+            
+            <div class="highlight-text">
+                👉 Isso <strong>não é preguiça. Não é idade.</strong><br>
+                É o seu corpo pedindo socorro hormonal.
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUTION SECTION -->
+    <section class="solution-section">
+        <div class="container">
+            <h2 class="section-title">O que é o Desafio Reset Hormonal?</h2>
+            <p class="section-description">Durante 7 dias, você seguirá um plano alimentar estratégico, simples e gostoso, que:</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <strong>Equilibra seus hormônios naturalmente</strong>
+                </div>
+                <div class="feature-card">
+                    <strong>Reduz compulsão, inchaço e cansaço</strong>
+                </div>
+                <div class="feature-card">
+                    <strong>Melhora o sono e ativa a queima de gordura</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCIENCE SECTION -->
+    <section class="science-section">
+        <div class="container">
+            <h2 class="section-title">Seu corpo é comandado por 3 hormônios principais:</h2>
+            
+            <div class="hormones-grid">
+                <div class="hormone-card">
+                    <span class="hormone-icon">🧪</span>
+                    <h3 class="hormone-name">Insulina</h3>
+                    <p class="hormone-description">regula gordura e açúcar</p>
+                </div>
+                <div class="hormone-card">
+                    <span class="hormone-icon">🧠</span>
+                    <h3 class="hormone-name">Leptina</h3>
+                    <p class="hormone-description">controla sua saciedade</p>
+                </div>
+                <div class="hormone-card">
+                    <span class="hormone-icon">🌙</span>
+                    <h3 class="hormone-name">Melatonina</h3>
+                    <p class="hormone-description">determina seu sono e metabolismo</p>
+                </div>
+            </div>
+            
+            <p class="section-description">
+                <strong>Se eles estão desregulados, nada que você tente vai funcionar.</strong><br>
+                Este plano foi feito para resetar esses hormônios em apenas uma semana.
+            </p>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section class="how-it-works-section">
+        <div class="container">
+            <h2 class="section-title">Como funciona o desafio?</h2>
+            
+            <div class="days-grid">
+                <div class="day-card">
+                    <div class="day-icon">📅</div>
+                    <h3 class="day-title">Dias 1-2: Limpeza da Insulina</h3>
+                </div>
+                <div class="day-card">
+                    <div class="day-icon">📅</div>
+                    <h3 class="day-title">Dias 3-5: Ativação da Leptina</h3>
+                </div>
+                <div class="day-card">
+                    <div class="day-icon">📅</div>
+                    <h3 class="day-title">Dias 6-7: Otimização da Melatonina</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Exemplo de um dia no plano:</h2>
+            
+            <div class="menu-grid">
+                <div class="meal-item">
+                    <span class="meal-icon">🥚</span>
+                    <span class="meal-text">Omelete com espinafre e abacate no café da manhã</span>
+                </div>
+                <div class="meal-item">
+                    <span class="meal-icon">🥜</span>
+                    <span class="meal-text">Mix de castanhas + iogurte com canela no lanche</span>
+                </div>
+                <div class="meal-item">
+                    <span class="meal-icon">🍗</span>
+                    <span class="meal-text">Frango grelhado + legumes no almoço</span>
+                </div>
+                <div class="meal-item">
+                    <span class="meal-icon">🍓</span>
+                    <span class="meal-text">Smoothie no lanche da tarde</span>
+                </div>
+                <div class="meal-item">
+                    <span class="meal-icon">🍵</span>
+                    <span class="meal-text">Sopa de legumes com peixe no jantar</span>
+                </div>
+            </div>
+            
+            <p class="section-description">
+                <strong>Tudo prático, saboroso e sem dietas malucas.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">Resultados que você vai sentir:</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">Diminuição rápida do inchaço</div>
+                <div class="benefit-card">Sono profundo já nos primeiros dias</div>
+                <div class="benefit-card">Redução da compulsão alimentar</div>
+                <div class="benefit-card">Corpo leve, mente calma</div>
+                <div class="benefit-card">Energia e autoestima de volta</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">O que outras mulheres estão dizendo:</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Sério, não acreditava que 7 dias fossem suficientes. Mas meu corpo desinchou, e eu comecei a dormir como uma pedra. Foi um respiro pra minha rotina."</p>
+                    <p class="testimonial-author">— Ana, 45 anos</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Não passei fome, não me privei de nada e ainda vi o ponteiro da balança baixar 3kg. Dormir bem? Isso foi bônus que eu nem esperava."</p>
+                    <p class="testimonial-author">— Júlia, 50 anos</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Eu tava meio desacreditada, mas esse método me trouxe mais leveza e paz na cabeça. Minha autoestima voltou com tudo, sabe?"</p>
+                    <p class="testimonial-author">— Fernanda, 53 anos</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Já tinha tentado várias coisas, mas nada encaixava. Agora, olho no espelho e vejo a mulher que sempre quis ser, sem neura."</p>
+                    <p class="testimonial-author">— Renata, 49 anos</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Recuperei aquelas roupas que eu amava e pensei que nunca mais usaria. E o melhor: sem abrir mão do que gosto de comer e dormindo super bem."</p>
+                    <p class="testimonial-author">— Paula, 46 anos</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Minha ansiedade tava batendo lá em cima, meu corpo inchado e cansado. Depois desse método, voltei a ter energia e as noites voltaram a ser minhas."</p>
+                    <p class="testimonial-author">— Sonia, 51 anos</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Dormir mal era rotina, e o inchaço também. Agora, não só durmo que nem bebê, como acordo com o corpo leve e pronto pra qualquer coisa."</p>
+                    <p class="testimonial-author">— Luciana, 47 anos</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Perdi peso, minha ansiedade deu uma trégua e, pela primeira vez em muito tempo, sinto que tô no controle da minha saúde. É libertador, sério."</p>
+                    <p class="testimonial-author">— Marta, 54 anos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT YOU GET SECTION -->
+    <section class="what-you-get-section">
+        <div class="container">
+            <h2 class="section-title">Ao adquirir hoje, você recebe:</h2>
+            
+            <div class="ebook-mockup">
+                <h3 style="font-size: 1.5rem; color: #2d3748; margin-bottom: 10px;">📘 HORMÔNIOS: GUIA PARA MULHERES DOS 30 AOS 55</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- GUARANTEE SECTION -->
+    <section class="guarantee-section">
+        <div class="container">
+            <h2 class="section-title">Garantia Total por 7 Dias</h2>
+            
+            <div class="guarantee-badge">
+                Se você não sentir mais leveza, menos inchaço e mais energia, devolvemos 100% do seu investimento.<br><br>
+                <strong>Sem perguntas. Sem riscos.</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section class="final-cta-section">
+        <div class="container">
+            <h2 class="final-cta-title">Chegou a hora de retomar o controle do seu corpo.</h2>
+            
+            <div class="final-cta-text">
+                Você já tentou de tudo.<br>
+                Agora é hora de tentar o que realmente respeita o seu corpo.
+            </div>
+            
+            <p style="font-size: 1.1rem; margin-bottom: 30px;">📲 Clique abaixo para acessar o plano agora:</p>
+            
+            <a href="https://pay.kiwify.com.br/DJFBfkk" class="final-cta-button">QUERO COMEÇAR MEU RESET</a>
+        </div>
+    </section>
+</body>
+</html>
